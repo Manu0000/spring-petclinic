@@ -211,6 +211,18 @@
 			</plugin>
 		</plugins>
 	</build>
+    <distributionManagement>
+  <repository>
+    <id>releases</id>
+    <!-- nexus server details for release -->
+    <url>http://10.200.200.7:8009/repository/maven-releases/</url>
+  </repository>
+  <snapshotRepository>
+    <id>snapshots</id>
+    <!-- nexus server details for snapshots-->
+    <url>http://10.200.200.7:8009/repository/maven-snapshots/</url>
+  </snapshotRepository>
+</distributionManagement>
 	<reporting>
 		<plugins>
 			<!-- integrate maven-cobertura-plugin to project site -->
